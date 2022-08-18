@@ -22,6 +22,7 @@ export default function Index() {
           </a>
         </li>
       </ul>
+      <button className="btn btn-primary">Example button</button>
     </div>
   );
 }
