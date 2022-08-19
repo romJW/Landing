@@ -21,6 +21,7 @@ export default function App() {
       </head>
 
       <body data-theme="orangy">
+        
         <Outlet />
 
         <ScrollRestoration />
