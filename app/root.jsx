@@ -1,5 +1,6 @@
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 import styles from './styles/tailwind.css';
+import  './styles/orangy.css';
 
 export function links() {
   return [{ rel: 'stylesheet', href: styles }];
@@ -21,7 +22,7 @@ export default function App() {
       </head>
 
       <body data-theme="orangy">
-        
+
         <Outlet />
 
         <ScrollRestoration />
