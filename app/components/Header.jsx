@@ -32,7 +32,7 @@ export default function (props) {
         </div>
         <div className="header__phone-section">
           <a href="tel:+7 (495) 111-11-11"><p className="text-2xl">+7 (495) 111-11-11</p></a>
-          <button className="header__feedback-modal block text-base">Получить обратный звонок</button>
+          <button className="header__feedback-modal block text-base underline">Получить обратный звонок</button>
         </div>
         </div>
         <div className="header__menu  flex gap-2.5 lg:hidden"onClick={()=>setModalOpen(!modalOpen)} >
