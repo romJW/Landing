@@ -1,28 +1,16 @@
-export default function Index() {
-  return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1 className="text-xl font-bold underline">Welcome to Remix</h1>
-
-      <ul>
-        <li>
-          <a target="_blank" href="https://remix.run/tutorials/blog" rel="noreferrer">
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-
-        <li>
-          <a target="_blank" href="https://remix.run/tutorials/jokes" rel="noreferrer">
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-      <button className="btn btn-primary">Example button</button>
-    </div>
-  );
+import Header from '../components/Header';
+import logo from "../assets/Logo.png"
+const nav = [
+  { title: 'PIR-Кровля Эксперт', path: '/', id: '1' },
+  { title: 'PIR-Кровля СМАРТ', path: '/', id: '2' },
+  { title: 'PirroSlope', path: '/', id: '3' },
+];
+const socials = [
+  { logo: 'fa-brands fa-instagram fa-2x', path: '/', id: '1' },
+  { logo: 'fa-solid fa-user fa-2x', path: '/', id: '2' },
+  { logo: 'fa-brands fa-vk fa-2x', path: '/', id: '3' },
+];
+export default function () {
+ 
+  return <Header logo={logo} nav={nav} socials={socials} />;
 }
