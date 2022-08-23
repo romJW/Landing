@@ -7,7 +7,7 @@ export default function (props) {
       {props.nav.map((option) => {
         return (
             <>
-          <Link className="font-bold" key={option.id} to={option.path}>
+          <Link className="font-bold text-base" key={option.id} to={option.path}>
             {option.title}
           </Link>
           <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
@@ -21,7 +21,7 @@ export default function (props) {
     <div className="header-mobile__phone-section mx-auto text-center">
           <a href="tel:+7 (727) 328-80-81"><p className="text-lg font-bold">+7 (727) 328-80-81</p></a>
           <a href="tel:+7 (771) 741-18-77"><p className="text-lg font-bold">+7 (771) 741-18-77</p></a>
-          <button className="header-mobile__feedback-modal block text-base underline mb-3.5">Получить обратный звонок</button>
+          <button className="header-mobile__feedback-modal block text-sm underline mb-3.5">Получить обратный звонок</button>
           <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
         </div>
         <p className="header-mobile__site text-sm mx-auto">info@abbex.kz</p>
