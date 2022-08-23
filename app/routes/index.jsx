@@ -10,14 +10,22 @@ const socials = [
   { logo: 'fa-brands fa-facebook-f', path: '/', id: '3' },
 ];
 export default function () {
- 
-  return( 
-  <div style={{ fontFamily: 'inter-regular, sans-serif', fontSize:'18px', color:"#fff", lineHeight: '1.4' }}>
-
-    <div className="hero-section">
-  <img src="/assets/hero.png" alt="" className="absolute inset-0 object-cover w-full h-full"/>
-  <Header nav={nav} socials={socials} />
-  </div>
-  </div>
-  )
+  return (
+    <div
+      style={{
+        fontFamily: 'inter-regular, sans-serif',
+        fontSize: '18px',
+        color: '#fff',
+        lineHeight: '1.4',
+      }}>
+      <div className="hero-section">
+        <img
+          src="/assets/hero.png"
+          alt=""
+          className="absolute inset-0 object-cover w-full h-full"
+        />
+        <Header nav={nav} socials={socials} />
+      </div>
+    </div>
+  );
 }

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function (props) {
   return (
-    <div className="header-mobile container mx-auto py-5 flex flex-col justify-center align-center gap-6 bg-[#E5E5E5] inset-0 object-cover w-screen text-black">
+    <div className="header-mobile w-screen mx-auto py-5 flex flex-col justify-center align-center gap-6 bg-white inset-0 object-cover w-screen text-black">
     <div className="header-mobile__nav mx-auto flex flex-col justify-center align-center text-center gap-7">
       {props.nav.map((option) => {
         return (
@@ -30,7 +30,7 @@ export default function (props) {
           {props.socials.map((social) => (
             <Link key={social.id} to={social.path}>
               <div className="bg-[#393939] border border-white rounded-full w-10 h-10 grid">
-                <i class={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
+                <i className={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
               </div>
             </Link>
           ))}

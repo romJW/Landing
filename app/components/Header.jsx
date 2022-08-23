@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Menu from './icons/Menu.jsx'
-import Close from './icons/Close.jsx'
 import MobileMenu from './MobileMenu.jsx'
 
 const mobileNav = [
@@ -22,7 +20,7 @@ export default function (props) {
   const [modalOpen, setModalOpen] = React.useState(false)
   return (
     <header className="w-screen 2xl:w-full flex flex-col justify-center sticky top-[-1px] 2xl:sticky z-10">
-      <div className="header__container container mx-auto flex items-center justify-between px-6 pt-8 pb-4 ">
+      <div className="header__container w-screen mx-auto flex items-center justify-between px-6 pt-8 pb-4 bg-[#414141] lg:bg-transparent">
         <Link to="/" className="header__logo">
           <img src='assets/Logo.png' alt="logo" className="w-36 lg:w-48" />
         </Link>
@@ -38,7 +36,7 @@ export default function (props) {
           {props.socials.map((social) => (
             <Link key={social.id} to={social.path}>
               <div className="border border-white rounded-full w-8 h-8 grid">
-                <i class={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
+                <i className={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
               </div>
             </Link>
           ))}
@@ -50,7 +48,7 @@ export default function (props) {
         </div>
         <div className="header__menu  flex gap-2.5 lg:hidden"onClick={()=>setModalOpen(!modalOpen)} >
           <p className="self-start text-sm" >Меню</p>
-        {modalOpen ? <Close/> : <Menu/>}
+        {modalOpen ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-bars"></i>}
         </div>
       </div>
       {modalOpen && <MobileMenu socials={mobileSocials} nav={mobileNav}/>}
