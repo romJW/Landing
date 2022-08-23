@@ -7,7 +7,7 @@ export default function (props) {
       {props.nav.map((option) => {
         return (
             <>
-          <Link className="font-bold text-base" key={option.id} to={option.path}>
+          <Link className="font-bold text-base" key={option.id} to={option.path} onClick={option.func}>
             {option.title}
           </Link>
           <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
