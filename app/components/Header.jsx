@@ -20,8 +20,8 @@ export default function (props) {
     { title: 'Контакты', path: '/', id: '6', func:()=>setModalOpen(false) },
   ];
   return (
-    <header className="w-screen container 2xl:w-full flex flex-col justify-center sticky top-[-1px] 2xl:sticky z-10">
-      <div className="header__container w-screen mx-auto flex items-center justify-between px-6 pt-8 pb-4 bg-[#414141] lg:bg-transparent">
+    <header className="w-screen mx-auto container 2xl:w-full flex flex-col justify-center sticky top-[-1px] 2xl:sticky z-10">
+      <div className="header__container container mx-auto flex  items-center justify-between px-6 pt-8 pb-4 bg-[#414141] lg:bg-transparent">
         <Link to="/" className="header__logo">
           <img src='assets/Logo.png' alt="logo" className="w-36 lg:w-48" />
         </Link>
