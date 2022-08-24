@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Heater from "../components/Heater";
+import Catalog from "../components/Catalog.jsx"
 const nav = [
   { title: 'PIR-Кровля Эксперт', path: '/', id: '1' },
   { title: 'PIR-Кровля СМАРТ', path: '/', id: '2' },
@@ -28,6 +29,5 @@ export default function () {
         <Header nav={nav} socials={socials} />
       </div>
       <Heater/>
+      <Catalog/>
     </div>
-  );
-}
