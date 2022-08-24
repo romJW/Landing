@@ -49,7 +49,7 @@ export default function (props) {
         </div>
         <div className="header__menu  flex gap-2.5 items-center lg:hidden"onClick={()=>setModalOpen(!modalOpen)} >
           <p className="text-sm" >Меню</p>
-        {modalOpen ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-bars"></i>}
+        {modalOpen ? <i className="fa-solid fa-xmark"></i> : <i className="fa-solid fa-bars"></i>}
         </div>
       </div>
       {modalOpen && <MobileMenu socials={mobileSocials} nav={mobileNav}/>}
