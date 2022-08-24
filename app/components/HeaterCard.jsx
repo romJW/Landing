@@ -1,6 +1,6 @@
 export default function (props) {
     return (
-        <div className="card rounded-sm shadow-[0_0_40px_rgba(0,0,0,0.08)] w-full basis-1/4 md:basis-1/3 lg:basis-1/4 xl:basis-1/6 bg-white rounded-lg">
+        <div className="card rounded-sm shadow-xl w-full basis-1/4 md:basis-1/3 lg:basis-1/4 xl:basis-1/6 bg-white rounded-lg">
         <div className="card-body">
           <div className="image mx-auto">
             <img src={props.card.pic} alt="" className="w-9 h-9 sm:w-11 sm:h-11"/>
