@@ -4,7 +4,7 @@ export default function Index() {
       className="text-black text-xl"
       style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4' }}>
       <div className="relative container mx-auto">
-        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-36 !rounded-none bg-white justify-center top-10 2xl:left-80">
+        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-10 left-5 py-7 2xl:left-80">
           <div>
             <span className="font-bold text-xl">Адрес</span>
           </div>
