@@ -3,9 +3,8 @@ export default function Index() {
     <div
       className="text-black text-xl"
       style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4', color:"#393939" }}>
-      <div className="relative container mx-auto">
-      <h3 className="md:hidden font-bold text-center text-3xl">КОНТАКТЫ</h3>
-        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-10 left-5 py-7 2xl:left-5">
+      <div className="relative container mx-auto ">
+        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-12 left-5 py-7 2xl:left-5">
           <div>
           <span className="font-bold text-xl">Адрес</span>
             <p className="text-xl">Казахстан, г. Алматы,</p>
@@ -24,7 +23,8 @@ export default function Index() {
           </div>
           <div></div>
         </div>
-        <div className="md:hidden text-base flex flex-col justify-center p-4 gap-4">
+        <div className="w-80 mx-auto md:hidden text-base card card-body flex flex-col justify-center !rounded-none p-4 gap-4 bg-white top-[80px] relative z-10">
+        <h3 className="md:hidden font-bold text-center text-3xl">КОНТАКТЫ</h3>
           <div>
             <span className="font-bold text-xl">Адрес</span>
           </div>
@@ -55,7 +55,9 @@ export default function Index() {
           height="456"
           frameborder="0"
           allowfullscreen="true"
-          style={{ position: 'relative' }}></iframe>
+          style={{ position: 'relative',}}>
+
+          </iframe>
       </div>
     </div>
   );
