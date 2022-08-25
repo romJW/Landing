@@ -31,3 +31,5 @@ export default function () {
       <Heater/>
       <Catalog/>
     </div>
+  )
+}
