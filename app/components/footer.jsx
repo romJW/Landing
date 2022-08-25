@@ -1,6 +1,6 @@
 export default function(props){
   return(
-    <div className="outline outline-green-600 py-5">
+    <div className="py-5">
       <div className="w-5/6 py-5 pr-10 m-auto">
         <img src="assets/abbex.png" alt="" className="mb-5"/>
         <footer className="footer bg-neutral text-neutral-focus inline-grid grid-cols-2 gap-y-2 gap-x-12 md:gap-x-14 md:grid md:grid-flow-column md:gap-10 md:grid-cols-4 relative">
