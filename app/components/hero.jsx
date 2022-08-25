@@ -29,7 +29,13 @@ export default function(props) {
             2xl:mb-16 2xl:w-1/2">
             Предлагаем материалы для теплоизоляции неэксплуатируемой кровли в Казахстане
           </div>
-          <button className="btn btn-primary">Перейти в каталог</button>
+          <button className="
+            btn btn-primary block m-auto w-64 h-16 mb-12
+            xs:w-80 xs:h-20 xs:text-lg
+            lg:inline
+            2xl:px-12 2xl:w-96 2xl:h-24 2xl:text-xl 2xl:tracking-widest">
+            Перейти в каталог
+          </button>
         </div>
       </div>
     </div>
