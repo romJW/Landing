@@ -2,13 +2,12 @@ export default function Index() {
   return (
     <div
       className="text-black text-xl"
-      style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4' }}>
+      style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4', color:"#393939" }}>
       <div className="relative container mx-auto">
-        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-10 left-5 py-7 2xl:left-80">
+      <h3 className="md:hidden font-bold text-center text-3xl">КОНТАКТЫ</h3>
+        <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-10 left-5 py-7 2xl:left-5">
           <div>
-            <span className="font-bold text-xl">Адрес</span>
-          </div>
-          <div>
+          <span className="font-bold text-xl">Адрес</span>
             <p className="text-xl">Казахстан, г. Алматы,</p>
             <p>ул.Нурмакова 1A</p>
           </div>
@@ -25,14 +24,14 @@ export default function Index() {
           </div>
           <div></div>
         </div>
-        <h3 className="md:hidden font-bold text-center text-3xl">Контакты</h3>
         <div className="md:hidden text-base flex flex-col justify-center p-4 gap-4">
           <div>
             <span className="font-bold text-xl">Адрес</span>
           </div>
-          <div className="flex justify-between">
-            <span className="text-sm">Казахстан, г. Алматы</span>
-            <span className="text-sm">ул.Нурмакова, 1A</span>
+          <div className=" flex justify-between ">
+            <span className="text-sm hidden xs:block">Казахстан, г. Алматы,</span>
+            <span className="text-sm hidden xs:block">ул.Нурмакова, 1A</span>
+            <span className="text-sm xs:hidden">Казахстан, г. Алматы, ул.Нурмакова, 1A</span>
           </div>
           <div className="mail">
             <p className="font-bold">Электронная почта</p>
