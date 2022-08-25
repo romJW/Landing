@@ -2,10 +2,10 @@ export default function(props) {
   return (
     <div
       style={{
-          fontFamily: 'inter-regular, sans-serif',
-          fontSize: '18px',
-          color: '#fff',
-          lineHeight: '1.4',
+        fontFamily: 'inter-regular, sans-serif',
+        fontSize: '18px',
+        color: '#fff',
+        lineHeight: '1.4',
       }}>
       <div className="bg-heroBg bg-no-repeat bg-cover bg-center h-fit font-inter overflow-hidden pb-28 lg:pb-0">
         <div className="h-14 lg:h-28 bg-zinc-700 md:bg-transparent"></div>
