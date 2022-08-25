@@ -1,28 +1,31 @@
-export default function Index() {
+import Header from '../components/Header';
+const nav = [
+  { title: 'PIR-Кровля Эксперт', path: '/', id: '1' },
+  { title: 'PIR-Кровля СМАРТ', path: '/', id: '2' },
+  { title: 'PirroSlope', path: '/', id: '3' },
+];
+const socials = [
+  { logo: 'fa-brands fa-vk', path: '/', id: '1' },
+  { logo: 'fa-brands fa-instagram', path: '/', id: '2' },
+  { logo: 'fa-brands fa-facebook-f', path: '/', id: '3' },
+];
+export default function () {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1 className="text-xl font-bold underline">Welcome to Remix</h1>
-
-      <ul>
-        <li>
-          <a target="_blank" href="https://remix.run/tutorials/blog" rel="noreferrer">
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-
-        <li>
-          <a target="_blank" href="https://remix.run/tutorials/jokes" rel="noreferrer">
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-      <button className="btn btn-primary">Example button</button>
+    <div
+      style={{
+        fontFamily: 'inter-regular, sans-serif',
+        fontSize: '18px',
+        color: '#fff',
+        lineHeight: '1.4',
+      }}>
+      <div className="hero-section">
+        <img
+          src="/assets/hero.png"
+          alt=""
+          className="absolute inset-0 object-cover w-full h-full"
+        />
+        <Header nav={nav} socials={socials} />
+      </div>
     </div>
   );
 }
