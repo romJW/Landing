@@ -32,7 +32,7 @@ export default function (props) {
             </Link>
           ))}
         </div>
-        <div className="header__contact-section hidden lg:flex flex-col-reverse gap-1 xl:flex-row xl:gap-7">
+        <div className="header__contact-section hidden items-center lg:flex flex-col-reverse gap-1 xl:flex-row xl:gap-7">
         <div className="header__socials flex gap-2.5 justify-around">
           {props.socials.map((social) => (
             <Link key={social.id} to={social.path}>
