@@ -2,6 +2,11 @@
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    extend: {
+      backgroundImage: {
+        'heroBg': "url('/images/hero.jpg')"
+      }
+    },
     screens: {
       'xs': '344px', // => @media (min-width: 344px) { ... }
       'sm':  '640px',  // => @media (min-width: 640px) { ... }
@@ -9,11 +14,6 @@ module.exports = {
       'lg':  '1024px', // => @media (min-width: 1024px) { ... }
       'xl':  '1280px', // => @media (min-width: 1280px) { ... }
       '2xl': '1536px', // => @media (min-width: 1536px) { ... }
-    },
-    extend: {
-      backgroundImage: {
-        'heroBg': "url('/images/hero.jpg')"
-      }
     },
   },
   daisyui: {
