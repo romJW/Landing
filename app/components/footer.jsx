@@ -1,6 +1,6 @@
 export default function(props){
   return(
-    <div id="footer" className="outline outline-green-600 py-5">
+    <div id="footer" className="py-5">
         <div className="modal" id="my-modal-2">
             <div className="modal-box rounded">
               <div className="h-fit py-5 px-3 text-center">
