@@ -8,10 +8,10 @@ export default function(props){
                   Оставьте ваши данные и наш менеджер свяжется с Вами,
                   чтобы рассчитать количество и стоимость материалов
                 </div>
-                <div className="w-full inline-grid grid-cols-1 gap-3">
-                  <input type="text" placeholder="Ваше имя" className="input input-bordered w-full text-base xs:input-lg" />
-                  <input type="text" placeholder="Номер телефона" className="input input-bordered w-full text-base xs:input-lg" />
-                  <button className="btn btn-primary text-base xs:btn-lg">Заказать звонок</button>
+                <div className="w-full inline-grid grid-cols-1 gap-3 text-base text-black">
+                  <input type="text" placeholder="Ваше имя" className="input input-bordered w-full xs:input-lg" />
+                  <input type="text" placeholder="Номер телефона" className="input input-bordered w-full xs:input-lg" />
+                  <a href="#"><button className="btn btn-primary w-full xs:btn-lg">Заказать звонок</button></a>
                 </div>
                 <div className="mt-3 text-sm">Нажимая на кнопку, вы соглашаетесь с 
                   <a href="">
