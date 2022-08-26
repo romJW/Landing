@@ -1,6 +1,8 @@
 import Header from '../components/Header';
 import Heater from "../components/Heater";
-import Catalog from "../components/Catalog.jsx"
+import Catalog from "../components/Catalog.jsx";
+import Map from "../components/Map.jsx";
+
 const nav = [
   { title: 'PIR-Кровля Эксперт', path: '/', id: '1' },
   { title: 'PIR-Кровля СМАРТ', path: '/', id: '2' },
@@ -11,6 +13,7 @@ const socials = [
   { logo: 'fa-brands fa-instagram', path: '/', id: '2' },
   { logo: 'fa-brands fa-facebook-f', path: '/', id: '3' },
 ];
+
 export default function () {
   return (
     <div
@@ -30,6 +33,7 @@ export default function () {
       </div>
       <Heater/>
       <Catalog/>
+      <Map/>
     </div>
   )
 }
