@@ -1,7 +1,7 @@
-export default function Index() {
+export default function Map() {
   return (
     <div
-      className="text-black text-xl"
+      className="section text-black text-xl"
       style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4', color:"#393939" }}>
       <div className="relative container mx-auto ">
         <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-12 left-5 py-7 2xl:left-5">
@@ -14,8 +14,8 @@ export default function Index() {
             <p className="font-bold text-xl">Электронная почта</p>
             <p className="">info@abbex.kz</p>
           </div>
-          <div class="flex gap-6 2xl:gap-10">
-            <div class="flex flex-col grow">
+          <div className="flex gap-6 2xl:gap-10">
+            <div className="flex flex-col grow">
               <p className="font-bold text-xl">Телефон</p>
               <a href="tel:+7 (727) 328-80-81">+7 (727) 328-80-81</a>
               <a href="tel:+7 (771) 741-18-77">+7 (771) 741-18-77</a>
@@ -50,11 +50,12 @@ export default function Index() {
           </div>
         </div>
         <iframe
+          title="map-contact"
           src="https://yandex.com/map-widget/v1/-/CCUBJQD8xB"
           width="100%"
           height="456"
-          frameborder="0"
-          allowfullscreen="true"
+          frameBorder="0"
+          allowFullScreen={true}
           style={{ position: 'relative',}}>
 
           </iframe>

@@ -1,11 +1,12 @@
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 
 import styles from './styles/tailwind.css';
-import './styles/orangy.css';
+import theme from './styles/orangy.css';
 
 export function links() {
   return [
     { rel: 'stylesheet', href: styles },
+    { rel: 'stylesheet', href: theme },
     { rel: 'stylesheet', href: 'assets/fontawesome/css/all.css' },
   ];
 }

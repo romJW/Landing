@@ -2,15 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import MobileMenu from './MobileMenu.jsx'
 
-
 const mobileSocials = [
   { logo: 'fa-brands fa-vk', path: '/', id: '1' },
   { logo: 'fa-brands fa-instagram', path: '/', id: '2' },
   { logo: 'fa-brands fa-facebook-f', path: '/', id: '3' },
 ];
 
-export default function (props) {
+export default function Header(props) {
   const [modalOpen, setModalOpen] = React.useState(false)
+
   const mobileNav = [
     { title: 'PIR-Кровля Эксперт', path: '/', id: '1', func:()=>setModalOpen(false) },
     { title: 'PIR-Кровля СМАРТ', path: '/', id: '2', func:()=>setModalOpen(false) },
@@ -19,8 +19,9 @@ export default function (props) {
     { title: 'Каталог', path: '/', id: '5', func:()=>setModalOpen(false) },
     { title: 'Контакты', path: '/', id: '6', func:()=>setModalOpen(false) },
   ];
+
   return (
-    <header className="w-screen mx-auto container 2xl:w-full flex flex-col justify-center sticky top-[-1px] 2xl:sticky z-10">
+    <header className="mt-[-104px] w-screen mx-auto container 2xl:w-full flex flex-col justify-center sticky top-[-1px] z-50">
       <div className="header__container container mx-auto flex  items-center justify-between px-6 pt-8 pb-4 bg-[#414141] lg:bg-transparent">
         <Link to="/" className="header__logo">
           <img src='assets/Logo.png' alt="logo" className="w-36 lg:w-48" />

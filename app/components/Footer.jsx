@@ -1,6 +1,6 @@
-export default function(props){
+export default function Footer(props){
   return(
-    <div id="footer" className="py-5">
+    <div id="footer" className="py-5 border-t-2 mt-8 border-gray-200">
         <div className="modal" id="my-modal-2">
             <div className="modal-box rounded">
               <div className="h-fit py-5 px-3 text-center">
@@ -13,7 +13,7 @@ export default function(props){
                   <input type="text" placeholder="Номер телефона" className="input input-bordered w-full xs:input-lg" />
                   <a href="#"><button className="btn btn-primary w-full xs:btn-lg">Заказать звонок</button></a>
                 </div>
-                <div className="mt-3 text-sm">Нажимая на кнопку, вы соглашаетесь с 
+                <div className="mt-3 text-sm">Нажимая на кнопку, вы соглашаетесь с
                   <a href="">
                     <span className="text-blue-200"> условиями обработки персональных данных</span>
                   </a>
@@ -25,19 +25,19 @@ export default function(props){
         <img src="assets/abbex.png" alt="" className="mb-5"/>
         <footer className="footer bg-neutral text-neutral-focus inline-grid grid-cols-2 gap-y-2 gap-x-12 md:gap-x-14 md:grid md:grid-flow-column md:gap-10 md:grid-cols-4 relative">
           <div>
-            <span className="footer-title footer-headlines opacity-100">Информация</span> 
+            <span className="footer-title footer-headlines opacity-100">Информация</span>
             <a className="link link-hover">Об утеплителе</a>
             <a className="link link-hover">Каталог</a>
             <a className="link link-hover">Контакты</a>
-          </div> 
+          </div>
           <div>
-            <span className="footer-title opacity-100">PIR-кровля эксперт</span> 
+            <span className="footer-title opacity-100">PIR-кровля эксперт</span>
             <a className="link link-hover">PIR-кровля эксперт</a>
             <a className="link link-hover">PIR-кровля СМАРТ</a>
             <a className="link link-hover">PirroSlope</a>
-          </div> 
+          </div>
           <div>
-            <span className="footer-title opacity-100">Контакты</span> 
+            <span className="footer-title opacity-100">Контакты</span>
             <a className="link-hover font-bold">+7 (495) 111-11-11</a>
             <a className="link-hover font underline underline-offset-4">Получить обратный звонок</a>
           </div>
