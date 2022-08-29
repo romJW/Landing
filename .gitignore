@@ -6,3 +6,7 @@ node_modules
 .env
 
 /app/styles/tailwind.css
+
+# Local Netlify folder
+.netlify
+/netlify/functions/server/build
