@@ -17,8 +17,8 @@ export default function Map() {
           <div className="flex gap-6 2xl:gap-10">
             <div className="flex flex-col grow">
               <p className="font-bold text-xl">Телефон</p>
-              <a href="tel:+7 (727) 328-80-81">+7 (727) 328-80-81</a>
-              <a href="tel:+7 (771) 741-18-77">+7 (771) 741-18-77</a>
+              <a rel="nofollow" href="tel:+7 (727) 328-80-81">+7 (727) 328-80-81</a>
+              <a rel="nofollow" href="tel:+7 (771) 741-18-77">+7 (771) 741-18-77</a>
             </div>
           </div>
           <div></div>
@@ -40,10 +40,10 @@ export default function Map() {
           <div className="flex">
             <div className="flex flex-col grow ">
               <p className="font-bold">Телефон</p>
-              <a className="text-sm" href="tel:+7 (727) 328-80-81">
+              <a className="text-sm" rel="nofollow" href="tel:+7 (727) 328-80-81">
                 +7 (727) 328-80-81
               </a>
-              <a className="text-sm" href="tel:+7 (771) 741-18-77">
+              <a className="text-sm" rel="nofollow" href="tel:+7 (771) 741-18-77">
                 +7 (771) 741-18-77
               </a>
             </div>

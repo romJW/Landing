@@ -11,10 +11,10 @@ export default function Footer(props){
                 <div className="w-full inline-grid grid-cols-1 gap-3 text-base text-black">
                   <input type="text" placeholder="Ваше имя" className="input input-bordered w-full xs:input-lg" />
                   <input type="text" placeholder="Номер телефона" className="input input-bordered w-full xs:input-lg" />
-                  <a href="#"><button className="btn btn-primary w-full xs:btn-lg">Заказать звонок</button></a>
+                  <a rel="nofollow" href="#"><button className="btn btn-primary w-full xs:btn-lg">Заказать звонок</button></a>
                 </div>
                 <div className="mt-3 text-sm">Нажимая на кнопку, вы соглашаетесь с
-                  <a href="">
+                  <a rel="nofollow" href="">
                     <span className="text-blue-200"> условиями обработки персональных данных</span>
                   </a>
                 </div>
@@ -46,7 +46,7 @@ export default function Footer(props){
             <a><img src="assets/social2.png" alt="" /></a>
             <a><img src="assets/social3.png" alt="" /></a>
           </div>
-          <a href="#my-modal-2"><button className="btn btn-primary btn-md block w-52 right-0 my-4 md:text-xs md:w-fit md:my-0 md:absolute lg:text-sm lg:w-52">Оставить заявку</button></a>
+          <a rel="nofollow" href="#my-modal-2"><button className="btn btn-primary btn-md block w-52 right-0 my-4 md:text-xs md:w-fit md:my-0 md:absolute lg:text-sm lg:w-52">Оставить заявку</button></a>
         </footer>
         <div className="text-secondary-content text-sm mt-2">Политика защиты и обработки <br/> персональных данных</div>
       </div>

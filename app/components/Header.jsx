@@ -22,11 +22,11 @@ function MobileMenu(props) {
       <div className="header-mobile__nav mx-auto flex flex-col justify-center align-center text-center gap-7">
         {props.nav.map((option) => {
           return (
-              <>
-            <Link className="font-bold text-base" key={option.id} to={option.path} onClick={props.onClose}>
-              {option.title}
-            </Link>
-            <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
+            <>
+              <Link className="font-bold text-base" key={option.id} rel="nofollow" to={option.path} onClick={props.onClose}>
+                {option.title}
+              </Link>
+              <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
             </>
           );
         })}
@@ -35,8 +35,8 @@ function MobileMenu(props) {
         Оставить заявку
       </button>
       <div className="header-mobile__phone-section mx-auto text-center">
-        <a href="tel:+7 (727) 328-80-81"><p className="text-lg font-bold">+7 (727) 328-80-81</p></a>
-        <a href="tel:+7 (771) 741-18-77"><p className="text-lg font-bold">+7 (771) 741-18-77</p></a>
+        <a rel="nofollow" href="tel:+7 (727) 328-80-81"><p className="text-lg font-bold">+7 (727) 328-80-81</p></a>
+        <a rel="nofollow" href="tel:+7 (771) 741-18-77"><p className="text-lg font-bold">+7 (771) 741-18-77</p></a>
         <button className="header-mobile__feedback-modal block text-sm underline mb-3.5">Получить обратный звонок</button>
         <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
       </div>
@@ -44,7 +44,7 @@ function MobileMenu(props) {
       <div className="w-16 border border-[#DEDEDE] mx-auto"></div>
       <div className="header-mobile__socials flex justify-center gap-2.5">
         {props.socials.map((social) => (
-          <Link key={social.id} to={social.path}>
+          <Link key={social.id} rel="nofollow" to={social.path}>
             <div className="bg-[#393939] border border-white rounded-full w-10 h-10 grid">
               <i className={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
             </div>
@@ -61,12 +61,12 @@ export default function Header(props) {
       {({ isOpen, toggle }) => (
         <header className="lg:mt-[-104px] w-screen lg:mx-auto lg:container 2xl:w-full flex flex-col justify-center sticky top-[-1px] z-50">
           <div className="header__container flex  items-center justify-between px-6 pt-8 pb-4 bg-[#414141] lg:bg-transparent">
-            <Link to="/" className="header__logo">
+            <Link rel="nofollow" to="/" className="header__logo">
               <img src='assets/Logo.png' alt="logo" className="w-36 lg:w-48" />
             </Link>
             <div className="header__nav hidden lg:flex gap-6">
               {props.nav.map((option) => (
-                <Link key={option.id} to={option.path} onClick={option.func}>
+                <Link key={option.id} rel="nofollow" to={option.path} onClick={option.func}>
                   {option.title}
                 </Link>
               ))}
@@ -74,7 +74,7 @@ export default function Header(props) {
             <div className="header__contact-section hidden items-center lg:flex flex-col-reverse gap-1 xl:flex-row xl:gap-7">
             <div className="header__socials flex gap-2.5 justify-around">
               {props.socials.map((social) => (
-                <Link key={social.id} to={social.path}>
+                <Link key={social.id} rel="nofollow" to={social.path}>
                   <div className="border border-white rounded-full w-8 h-8 grid">
                     <i className={social.logo} style={{color:"#fff",display:"block", justifySelf:"center", alignSelf:"center" }}/>
                   </div>
@@ -82,7 +82,7 @@ export default function Header(props) {
               ))}
             </div>
             <div className="header__phone-section">
-              <a href="tel:+7 (495) 111-11-11"><p className="text-2xl font-bold">+7 (495) 111-11-11</p></a>
+              <a rel="nofollow" href="tel:+7 (495) 111-11-11"><p className="text-2xl font-bold">+7 (495) 111-11-11</p></a>
               <button className="header__feedback-modal block text-base underline">Получить обратный звонок</button>
             </div>
             </div>
