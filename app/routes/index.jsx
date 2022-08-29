@@ -4,7 +4,6 @@ import Catalog from "../components/Catalog.jsx";
 import Map from "../components/Map.jsx";
 import Footer from "../components/Footer.jsx";
 import Hero from "../components/Hero.jsx";
-import Solution from "../components/Solution.jsx";
 import { MobileMenuContext } from '../contexts/MobileMenu.js'
 
 const nav = [
@@ -35,7 +34,6 @@ export default function () {
           <>
             <Hero/>
             <Heater/>
-            <Solution/>
             <Catalog/>
             <Map/>
             <Footer/>
