@@ -1,7 +1,6 @@
 export default function Hero(props) {
   return (
     <div className="bg-heroBg bg-no-repeat bg-cover bg-center h-fit font-inter overflow-hidden pb-28 lg:pb-0">
-      <div className="h-14 lg:h-28 bg-zinc-700 md:bg-transparent"></div>
       <div className="pt-40 lg:px-24 lg:pb-52 lg:pt-38 xl:pt-22 xl:pb-18 2xl:px-52 2xl:pb-56">
         <div className="
           h-fit pb-3 text-center font-semibold leading-10 uppercase text-3xl
