@@ -4,6 +4,8 @@ import Catalog from "../components/Catalog.jsx";
 import Map from "../components/Map.jsx";
 import Footer from "../components/Footer.jsx";
 import Hero from "../components/Hero.jsx";
+import Solution from "../components/Solution.jsx";
+import { MobileMenuContext } from '../contexts/MobileMenu.js'
 
 const nav = [
   { title: 'PIR-Кровля Эксперт', path: '/', id: '1' },
@@ -25,13 +27,21 @@ export default function () {
         fontSize: '18px',
         color: '#fff',
         lineHeight: '1.4',
-      }}>
+      }}
+    >
       <Header nav={nav} socials={socials} />
-      <Hero/>
-      <Heater/>
-      <Catalog/>
-      <Map/>
-      <Footer/>
+      <MobileMenuContext.Consumer>
+        {({ isOpen }) => !isOpen && (
+          <>
+            <Hero/>
+            <Heater/>
+            <Solution/>
+            <Catalog/>
+            <Map/>
+            <Footer/>
+          </>
+        )}
+      </MobileMenuContext.Consumer>
     </div>
   )
 }

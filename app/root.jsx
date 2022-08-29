@@ -1,4 +1,6 @@
+import React, { useState } from 'react';
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
+import { MobileMenuContext } from './contexts/MobileMenu.js'
 
 import styles from './styles/tailwind.css';
 import theme from './styles/orangy.css';
@@ -18,6 +20,13 @@ export const meta = () => ({
 });
 
 export default function App(nav) {
+  const [mobileMenuOpen, setMobileMenuState] = useState();
+
+  const mobileMenu = {
+    isOpen: mobileMenuOpen,
+    toggle: () => setMobileMenuState(!mobileMenuOpen)
+  }
+
   return (
     <html lang="en">
       <head>
@@ -27,7 +36,9 @@ export default function App(nav) {
       </head>
 
       <body data-theme="orangy">
-        <Outlet />
+        <MobileMenuContext.Provider value={mobileMenu}>
+          <Outlet />
+        </MobileMenuContext.Provider>
 
         <ScrollRestoration />
 
