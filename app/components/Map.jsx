@@ -1,7 +1,7 @@
 export default function Map() {
   return (
     <div
-      className="section text-black text-xl"
+      className="section relative text-black text-xl"
       style={{ fontFamily: 'inter, sans-serif', lineHeight: '1.4', color:"#393939" }}>
       <div className="relative container mx-auto ">
         <div className="card card-body !hidden md:!flex flex-col gap-5 absolute z-10 pr-44 !rounded-none bg-white justify-center top-12 left-5 py-7 2xl:left-5">
@@ -47,6 +47,7 @@ export default function Map() {
                 +7 (771) 741-18-77
               </a>
             </div>
+            
           </div>
         </div>
         <iframe
@@ -57,7 +58,6 @@ export default function Map() {
           frameBorder="0"
           allowFullScreen={true}
           style={{ position: 'relative',}}>
-
           </iframe>
       </div>
     </div>
